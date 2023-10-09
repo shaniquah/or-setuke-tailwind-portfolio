@@ -1,0 +1,11 @@
+.logo:hover {
+  filter: hue-rotate(30deg);
+  transform: scale(1.5);
+  box-shadow: 4px 4px 10px rgb(255, 113, 191);
+}
+
+.logo {
+  border-radius: 50%;
+  border-color: transparent;
+  width: 40px;
+}

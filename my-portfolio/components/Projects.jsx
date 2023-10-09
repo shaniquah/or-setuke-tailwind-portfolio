@@ -9,7 +9,7 @@ const projectsData = [
   {
     id: 1,
     title: "Web Calendar App",
-    image: "./images/projects/calendar-thumb.png",
+    image: "/images/projects/calendar-thumb.png",
     description:
       "A web calendar application that automatically calculates the current month and day and displays all dates in a grid format.",
     technologies:
@@ -21,27 +21,25 @@ const projectsData = [
   {
     id: 2,
     title: "Events Web App",
-    image: "",
+    image: "/images/projects/events-thumb.png",
     description:
       "An app designed to serve as an example of building a dynamic events web application with Next.js and React.js. Users can explore events and interact with event details.",
     technologies:
       "JavaScript(74.4%), CSS(25.6%), Next.js, React.js, Firebase, MongoDB.",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/shaniquah/udemy-nextjs.git",
-    previewUrl: "/",
-    link: "https://github.com/shaniquah/udemy-nextjs.git",
+    previewUrl: "https://nextjs-events-app-beta.vercel.app/",
   },
   {
     id: 3,
     title: "Blog",
-    image: "./images/projects/blog-thumb.png",
+    image: "/images/projects/blog-thumb.png",
     description:
       "A fully functional blog built A to Z using NextJS & ReactJS featuring user authentication, CRUD operations for blog posts, responsive design, SEO optimization, and more.",
     technologies: "JavaScript, CSS, Next.js, React.js, Node.js, MongoDB",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/shaniquah/udemy-nextjs-blog.git",
     previewUrl: "https://myblogg-seven.vercel.app/",
-    link: "https://github.com/shaniquah/udemy-nextjs-blog.git",
   },
 ];
 

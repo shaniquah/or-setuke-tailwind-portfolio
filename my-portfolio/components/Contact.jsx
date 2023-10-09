@@ -1,10 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import GithubIcon from "@/public/github-icon.svg";
-import LinkedinIcon from "@/public/linkedin-icon.svg";
+import styles from "./emailstyle.module.css";
 
 export default function Email() {
+  async function formSubmit(event) {
+    event.preventDefault()
+
+    const formData = new FormData(event.target)
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      body: formData
+    })
+
+    const data = await response.json()
+  }
   return (
     <section
       id="contact"
@@ -21,17 +31,34 @@ export default function Email() {
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={'@/images/github-logo.png'} alt="Github Icon" />
+        <div className="socials flex flex-row gap-6">
+          <Link href="https://github.com/shaniquah">
+            <Image
+              className={styles.logo}
+              src={"/images/github-logo.png"}
+              width={40}
+              height={40}
+              alt="Github Icon"
+            />
           </Link>
-          <Link href="linkedin.com">
-            <Image src={'@/images/linkedin-logo.png'} alt="Linkedin Icon" />
+          <Link href="https://linkedin.com/in/otshepeng-setuke">
+            <Image
+              className={styles.logo}
+              src={"/images/linkedin-logo.png"}
+              width={40}
+              height={40}
+              alt="Linkedin Icon"
+            />
           </Link>
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col">
+        <form
+        onSubmit={formSubmit}
+          className="flex flex-col"
+          action="https://formsubmit.co/or.setuke@gmail.com"
+          method="POST"
+        >
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -41,10 +68,29 @@ export default function Email() {
             </label>
             <input
               type="email"
+              name="email"
               id="email"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="email@example.com"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="name"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Name/Company Name
+            </label>
+            <input
+              type="text"
+              standout
+              name="name"
+              dense
+              id="name"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Some Organization"
             />
           </div>
           <div className="mb-6">
@@ -57,6 +103,8 @@ export default function Email() {
             <input
               type="text"
               id="subject"
+              name="_subject"
+              dense
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just saying hi"
@@ -76,6 +124,12 @@ export default function Email() {
               placeholder="Let's talk about..."
             />
           </div>
+          <input type="hidden" name="_template" value="box" />
+          <input
+            type="hidden"
+            name="_webhook"
+            value="https://localhost:3000/your-webhook"
+          />
           <button
             type="submit"
             className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
