@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Head from "next/head";
 
-import About from "../components/About";
+import About from "../../components/About";
 
 export default function AboutDetailPage(props) {
   console.log("AboutMe detail Props: ", props);
