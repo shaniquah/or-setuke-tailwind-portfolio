@@ -20,25 +20,25 @@ export default function Hero() {
             <TypeAnimation
               sequence={[
                 "Otshepeng Setuke!",
-                1000,
+                2500,
                 "a Web Developer!",
-                1000,
+                2500,
                 "a Junior Software Developer!",
-                1000,
+                2500,
                 "a FullStack JavaScript Engineer!",
-                1000,
+                2500,
                 "a React.js Developer!",
-                1000,
+                2500,
                 "a Next.js Developer!",
-                1000,
+                2500,
                 "a Software Tester!",
-                1000,
+                2500,
                 "a Software Engineer!",
-                1000,
+                2500,
                 "a UI / UX Developer!",
-                1000,
+                2500,
                 "a FullStack Developer!",
-                1000,
+                2500,
               ]}
               wrapper="span"
               speed={50}
@@ -53,23 +53,19 @@ export default function Hero() {
 
           <div>
             <button
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:bg-slate-800 "
-              href="/#contact"
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:text-slate-600 "
             >
-              <NavLink
-                href={"#contact"}
-                title={"Hire Me"}
-                className="text-white"
-              />
+              <a href="/#contact">Hire me</a>
+              
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:bg-slate-800 ">
-              <a href="/https://padlet.com/shaniquahsetuke/my-data-portfolio-8ni0o5zjr6gqacfd">
-                <span>See My Padlet</span>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:text-slate-600 ">
+              <a href="https://padlet.com/shaniquahsetuke/my-data-portfolio-8ni0o5zjr6gqacfd">
+                <span>View My Padlet</span>
               </a>
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white  mt-3">
               <a href={downloadCV} download={"Otshepeng Setuke's CV"}>
-                <span className="block bg-black hover:bg-slate-800 rounded-full px-5 py-2">
+                <span className="block bg-black hover:bg-slate-500 rounded-full px-5 py-2">
                   Download My CV
                 </span>
               </a>
