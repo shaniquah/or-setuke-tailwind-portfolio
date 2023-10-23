@@ -36,8 +36,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>CodeSpace Academy</li>
-        <li>Lebone II College of the Royal Bafokeng</li>
+        <li>CodeSpace Academy | 2022 - Current</li>
+        <li>Lebone II College of the Royal Bafokeng | 2015 - 2020</li>
       </ul>
     ),
   },

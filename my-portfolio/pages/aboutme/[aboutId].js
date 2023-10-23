@@ -14,12 +14,12 @@ export default function AboutDetailPage(props) {
   }
 
   return (
-    <Fragment1>
+    <Fragment>
         <Head>
             <title>{abaoutTab.title}</title>
             <meta name="description" content={aboutTab.description} />
         </Head>
         <About />
-    </Fragment1>
+    </Fragment>
   )
 }
