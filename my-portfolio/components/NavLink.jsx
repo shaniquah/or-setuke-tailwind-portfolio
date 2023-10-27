@@ -4,7 +4,7 @@ export default function NavLink({href, title}) {
     return (
         <Link
                 href={href}
-                className="block py-2 pl-3 pr-4 text-[#537892] sm:text-xl rounded md:p-0 hover:text-white"
+                className="block py-2 pl-3 pr-4  text-[#e9ff3f] sm:text-xl rounded md:p-0 hover:text-white"
               >
                 {title}
               </Link>

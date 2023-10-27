@@ -26,7 +26,7 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#273474] top-0 left-0 right-0 z-10 bg-[#121212]/100">
+    <nav className="fixed mx-auto border border-b-[#273474] border-t-transparent border-r-transparent top-0 left-0 right-0 z-10 bg-gradient-to-r from-slate-950 to-pink-900 h-400px p-7">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
