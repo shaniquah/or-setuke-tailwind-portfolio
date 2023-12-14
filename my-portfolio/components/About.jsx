@@ -31,30 +31,139 @@ const TAB_DATA = [
     title: "Tech Skills",
     id: "tech-skills",
     content: (
-      <motion.ul
+      <motion.ul /* FIND A WAY TO RENDER THIS LIST IN COLUMNS */
+        key={"tech-skills"}
         initial="hidden"
         animate="visible"
         variants={list}
         className="list-disc pl-2"
       >
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">HTML</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">CSS</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">JavaScript</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Reacts</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Next.js</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Node.js</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">npm</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">MongoDB</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Firebase</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Supabase</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">GitHub / Git</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Visual Studio Code</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Netlify</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Vercel</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Figma / FigJam</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Miro</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Slack</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Discord</motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          HTML
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          CSS
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          JavaScript
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Reacts
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Next.js
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Node.js
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          npm
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          MongoDB
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Firebase
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Supabase
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          GitHub / Git
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Visual Studio Code
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Netlify
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Vercel
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Figma / FigJam
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Miro
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Slack
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Discord
+        </motion.li>
       </motion.ul>
     ),
   },
@@ -63,19 +172,68 @@ const TAB_DATA = [
     id: "soft-skills",
     content: (
       <motion.ul
+        key={"soft-skills"}
         initial="hidden"
         animate="visible"
         variants={list}
         className="list-disc pl-2"
       >
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">User-Centric Thinking</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Self-Starter</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Dynamic & Analytical Thinking</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Quick-wit & Fast Learning</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Adaptable</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Trend-Savvy</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Communication</motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300">Team-Orientation</motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          User-Centric Thinking
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Self-Starter
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Dynamic & Analytical Thinking
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Quick-wit & Fast Learning
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Adaptable
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Trend-Savvy
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Communication
+        </motion.li>
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-sky-300"
+        >
+          Team-Orientation
+        </motion.li>
       </motion.ul>
     ),
   },
@@ -84,12 +242,17 @@ const TAB_DATA = [
     id: "education",
     content: (
       <motion.ul
+        key={"education"}
         initial="hidden"
         animate="visible"
         variants={list}
         className="list-none pl-2"
       >
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200">
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200"
+        >
           <a
             className=" hover:text-blue-100"
             href="https://www.codespace.co.za/"
@@ -98,7 +261,11 @@ const TAB_DATA = [
           </a>{" "}
           | 2022 - Current
         </motion.li>
-        <motion.li variants={item} className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200">
+        <motion.li
+          // 
+          variants={item}
+          className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200"
+        >
           <a
             className="hover:text-blue-100"
             href="https://www.lebonecollege.co.za/"
@@ -115,12 +282,13 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <motion.ul
+        key={"certifications"}
         initial="hidden"
         animate="visible"
         variants={list}
         className="list-none pl-2"
       >
-        <motion.li variants={item}>
+        <motion.li  variants={item}>
           <a
             className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200 hover:text-blue-100"
             href="/certifications/Academic_Transcript_-_BCL2302_-_OTSSET869_Otshepeng_Setuke.pdf"
@@ -128,7 +296,7 @@ const TAB_DATA = [
             Fullstack JSE Academic Transcript
           </a>
         </motion.li>
-        <motion.li variants={item}>
+        <motion.li  variants={item}>
           <a
             className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200 hover:text-blue-100"
             href="/certifications/EF SET Certificate.pdf"
@@ -136,7 +304,7 @@ const TAB_DATA = [
             EF SET Certificate
           </a>
         </motion.li>
-        <motion.li variants={item}>
+        <motion.li  variants={item}>
           <a
             className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200 hover:text-blue-100"
             href="/certifications/"
@@ -144,7 +312,7 @@ const TAB_DATA = [
             Programming Fundamentals Completion Certificate
           </a>
         </motion.li>
-        <motion.li variants={item}>
+        <motion.li  variants={item}>
           <a
             className="text-transparent bg-clip-text bg-gradient-to-r from-rose-300 to-sky-200 hover:text-blue-100"
             href="/certifications/Udemy-CL&BCSP certificate.pdf"
@@ -244,7 +412,16 @@ export default function About() {
             </TabButton>
           </div>
 
-          {tabData && tabData.content}
+          {tabData && (
+            <motion.div
+              key={tabData.id}
+              variants={list}
+              initial="hidden"
+              animate="visible"
+            >
+              {tabData.content}
+            </motion.div>
+          )}
         </div>
       </div>
     </section>

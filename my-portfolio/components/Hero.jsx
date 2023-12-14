@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
-import NavLink from "./NavLink";
+// import NavLink from "./NavLink";
+import { classes } from "./Hero.module.css";
 
 export default function Hero() {
   const downloadCV =
@@ -23,9 +24,9 @@ export default function Hero() {
                 2500,
                 "a Web Developer!",
                 2500,
-                "a Junior Software Developer!",
+                "a Software Developer!",
                 2500,
-                "a FullStack JavaScript Engineer!",
+                "a FullStack JS Engineer!",
                 2500,
                 "a React.js Developer!",
                 2500,
@@ -37,6 +38,8 @@ export default function Hero() {
                 2500,
                 "a UI / UX Developer!",
                 2500,
+                "a UI / UX Designer!",
+                2500,
                 "a FullStack Developer!",
                 2500,
               ]}
@@ -45,18 +48,18 @@ export default function Hero() {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#90afc5] text-base sm:text-lg lg:text-xl">
+          <br/>
+          <p className="text-[#90afc5] text-base sm:text-lg lg:text-xl mt-8">
             I am an aspiring Junior Software Developer with experience in
-            Full-Stack JavaScript Engineering. I have experience in web
+            Full-Stack JavaScript Engineering looking for entry-level roles. I have experience in web
             development especially frontend frameworks like ReactJS.
           </p>
 
           <div>
             <button
-              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:text-blue-200 "
+              className={`px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:text-blue-200`}
             >
-              <a href="/#contact">Hire me</a>
-              
+              <a href="mailto:or.setuke@gmail.com">Reach Out</a>
             </button>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 > via-purple-500 to-pink-500 text-white hover:text-blue-200 ">
               <a href="https://padlet.com/shaniquahsetuke/my-data-portfolio-8ni0o5zjr6gqacfd">
@@ -73,8 +76,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-gradient-to-br from-yellow-400 via-pink-900 to-black w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+        <div className="col-span-5 place-self-center mt-4 lg:mt-0 mr-0">
+          <div className="rounded-full bg-gradient-to-br from-yellow-400 via-pink-900 to-black w-[150px] h-[150px] lg:w-[300px] lg:h-[300px] relative">
             <Image
               src="/images/hero-profile-colored-removebg-preview.png"
               alt="hero image"
